@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Sorteio Simples</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/sorteio.js"></script>
+  </head>
+  <body>
+    <header> 
+        <h1>Sorteio Simples</h1>
+    </header> 
+    <main>
+        <section class="container">
+            <h2> Informe os números</h2>
+            <label> Número Inicial</label>
+            <input type="number" name="numeroinicial" id="numeroInicial" class="campo">
+
+            <label> Número Final</label>
+            <input type="number" name="numerofinal" id="numeroFinal" class="campo">
+
+            <button onclick="
+                alert(
+                  sortear.sortear
+                    (document.getElementById('numeroInicial').value,
+                     document.getElementById('numeroFinal').value
+                  )
+            )">Sortear</button>
+        </section>
+    </main>
+  </body>
+</html>
